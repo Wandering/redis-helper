@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author yangyongping
- * @date 2022-06-14 5:55 下午
+ * 2022-06-14 5:55 下午
  */
 @Component
 public class RateLimitTest {

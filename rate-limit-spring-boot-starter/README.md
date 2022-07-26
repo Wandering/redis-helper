@@ -3,7 +3,7 @@
 ```xml
 <dependency>
     <artifactId>rate-limit-spring-boot-starter</artifactId>
-    <groupId>io.github.redis.helper</groupId>
+    <groupId>io.github.wandering</groupId>
     <version>1.0.0-RELEASE</version>
 </dependency>
 ```

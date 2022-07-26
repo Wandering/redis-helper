@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author yangyongping
- * @date 2022-06-14 4:01 下午
+ * 2022-06-14 4:01 下午
  */
 public class RedissonRateLimiter implements IRateLimiter {
 

@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @author yangyongping
- * @date 2022-06-14 4:39 下午
+ * 2022-06-14 4:39 下午
  */
 @ConfigurationProperties(prefix = "coolcollege.redis.helper")
 @Data

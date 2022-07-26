@@ -7,7 +7,7 @@ import org.springframework.expression.spel.support.StandardEvaluationContext;
 
 /**
  * @author yangyongping
- * @date 2022-06-14 8:44 下午
+ * 2022-06-14 8:44 下午
  */
 public class SpringElParser {
     private static final ExpressionParser spelExpressionParser = new SpelExpressionParser();

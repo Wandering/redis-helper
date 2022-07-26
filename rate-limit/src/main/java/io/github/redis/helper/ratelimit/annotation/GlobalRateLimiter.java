@@ -10,7 +10,7 @@ import io.github.redis.helper.ratelimit.enums.RateType;
 
 /**
  * @author yangyongping
- * @date 2022-06-13 11:07 上午
+ * 2022-06-13 11:07 上午
  */
 @Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

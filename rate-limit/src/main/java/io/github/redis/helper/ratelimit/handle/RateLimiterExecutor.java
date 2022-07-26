@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author yangyongping
- * @date 2022-06-13 11:25 上午
+ * 2022-06-13 11:25 上午
  */
 @Aspect
 public class RateLimiterExecutor {
@@ -128,7 +128,7 @@ public class RateLimiterExecutor {
      * 解析SPEL表达式
      *
      * @author 曲元涛
-     * @date 2020/11/30 下午6:05
+     * 2020/11/30 下午6:05
      * @param spel          SPEL表达式
      */
     private String analysisSpel(String spel, Object[] args,String[] params) {

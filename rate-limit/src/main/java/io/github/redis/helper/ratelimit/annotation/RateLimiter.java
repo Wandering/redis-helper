@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author yangyongping
- * @date 2022-06-13 11:07 上午
+ * 2022-06-13 11:07 上午
  */
 @Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
@@ -43,7 +43,7 @@ public @interface RateLimiter {
 
     /**
      * 每个周期产生令牌数
-     * 此侦听器的目标名称，通过容器范围的{@link org.springframework.jms.support.destination.DestinationResolver}策略解析。
+     * 此侦听器的目标名称，通过容器范围的策略解析。
      * @return
      */
     long rate() default -1;

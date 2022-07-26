@@ -7,7 +7,7 @@ import org.redisson.api.RedissonClient;
 
 /**
  * @author yangyongping
- * @date 2022-06-13 7:51 下午
+ * 2022-06-13 7:51 下午
  */
 public class RateLimiterService {
     private final RedissonClient redissonClient;

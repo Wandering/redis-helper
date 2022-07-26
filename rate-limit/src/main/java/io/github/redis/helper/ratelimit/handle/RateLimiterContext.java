@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 
 /**
  * @author yangyongping
- * @date 2022-06-14 3:50 下午
+ * 2022-06-14 3:50 下午
  */
 
 public class RateLimiterContext {
