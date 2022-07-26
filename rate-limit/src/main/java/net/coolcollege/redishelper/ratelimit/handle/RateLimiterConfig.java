@@ -1,5 +1,6 @@
 package net.coolcollege.redishelper.ratelimit.handle;
 
+import lombok.EqualsAndHashCode;
 import net.coolcollege.redishelper.ratelimit.enums.RateType;
 
 import java.util.concurrent.TimeUnit;
@@ -8,6 +9,7 @@ import java.util.concurrent.TimeUnit;
  * @author yangyongping
  * @date 2022-06-13 7:52 下午
  */
+@EqualsAndHashCode
 public class RateLimiterConfig {
     private RateType rateType;
     private long rateInterval;

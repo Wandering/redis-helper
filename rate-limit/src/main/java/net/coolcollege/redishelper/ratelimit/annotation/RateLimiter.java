@@ -43,6 +43,7 @@ public @interface RateLimiter {
 
     /**
      * 每个周期产生令牌数
+     * 此侦听器的目标名称，通过容器范围的{@link org.springframework.jms.support.destination.DestinationResolver}策略解析。
      * @return
      */
     long rate() default -1;

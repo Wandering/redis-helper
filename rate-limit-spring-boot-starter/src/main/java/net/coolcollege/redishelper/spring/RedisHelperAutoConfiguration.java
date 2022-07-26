@@ -8,19 +8,15 @@ import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.redisson.config.ReplicatedServersConfig;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -44,6 +40,7 @@ public class RedisHelperAutoConfiguration {
             replicatedServersConfig.setNodeAddresses(redisConfig.getAddress());
             if (!StringUtils.isEmpty(redisConfig.getPassword())) {
                 replicatedServersConfig.setPassword(redisConfig.getPassword());
+                replicatedServersConfig.setDatabase(redisConfig.getDb());
             }
         }
         return config;

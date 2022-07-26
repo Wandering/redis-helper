@@ -23,8 +23,18 @@ public class RedissonRateLimiter implements IRateLimiter {
     @Override
     public boolean trySetRate(RateLimiterConfig rateLimiterConfig) {
         this.rateLimiterConfig = rateLimiterConfig;
-        return rateLimiter.trySetRate(RateType.valueOf(rateLimiterConfig.getRateType().toString()),rateLimiterConfig.getRate(),rateLimiterConfig.getRateInterval(),
-            RateIntervalUnit.valueOf(rateLimiterConfig.getTimeUnit().toString()));
+
+        boolean trySetRate = rateLimiter
+            .trySetRate(RateType.valueOf(rateLimiterConfig.getRateType().toString()), rateLimiterConfig.getRate(),
+                rateLimiterConfig.getRateInterval(),
+                RateIntervalUnit.valueOf(rateLimiterConfig.getTimeUnit().toString()));
+        if (!this.rateLimiterConfig.getRateType().toString().equals(rateLimiter.getConfig().getRateType().toString())||
+            this.rateLimiterConfig.getRate() != rateLimiter.getConfig().getRate() ||
+            RateIntervalUnit.valueOf(this.rateLimiterConfig.getTimeUnit().toString()).toMillis(this.rateLimiterConfig.getRateInterval()) != rateLimiter.getConfig().getRateInterval()
+        ){
+            this.setRate(this.rateLimiterConfig);
+        }
+        return trySetRate;
     }
 
     @Override

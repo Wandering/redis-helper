@@ -1,7 +1,7 @@
 package net.coolcollege.redishelper.demo.redishelperdemo;
 
+import net.coolcollege.redishelper.ratelimit.exception.RateLimiterException;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.AssertionsKt;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,11 +17,10 @@ class RedisHelperDemoApplicationTests {
 
     @Test
     void testSingleRateLimit(){
-        for (int i = 0; i < 100; i++) {
-            rateLimitTest.rateLimit();
-        }
-
+        rateLimitTest.rateLimit();
         Assertions.assertEquals(rateLimitTest.size(),1);
+        Assertions.assertThrows(RateLimiterException.class,()->rateLimitTest.rateLimit());
+
     }
 
 

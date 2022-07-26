@@ -32,6 +32,10 @@ public class RedisHelperProperties {
          * 密码:选填,默认值:空串
          */
         private String password;
+        /**
+         * db:选填，默认值: db0
+         */
+        private Integer db = 0;
     }
 
     /**
