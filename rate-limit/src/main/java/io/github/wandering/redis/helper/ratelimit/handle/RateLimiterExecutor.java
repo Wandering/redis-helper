@@ -1,10 +1,10 @@
-package io.github.redis.helper.ratelimit.handle;
+package io.github.wandering.redis.helper.ratelimit.handle;
 
-import io.github.redis.helper.ratelimit.RateLimiterService;
-import io.github.redis.helper.ratelimit.annotation.RateLimiter;
-import io.github.redis.helper.ratelimit.enums.RateType;
-import io.github.redis.helper.ratelimit.spel.SpringElParser;
-import io.github.redis.helper.ratelimit.exception.RateLimiterException;
+import io.github.wandering.redis.helper.ratelimit.RateLimiterService;
+import io.github.wandering.redis.helper.ratelimit.annotation.RateLimiter;
+import io.github.wandering.redis.helper.ratelimit.enums.RateType;
+import io.github.wandering.redis.helper.ratelimit.spel.SpringElParser;
+import io.github.wandering.redis.helper.ratelimit.exception.RateLimiterException;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -35,7 +35,7 @@ public class RateLimiterExecutor {
 
 
 
-    @Pointcut("@annotation(io.github.redis.helper.ratelimit.annotation.RateLimiter)")
+    @Pointcut("@annotation(io.github.wandering.redis.helper.ratelimit.annotation.RateLimiter)")
     public void pointcut(){
     }
 

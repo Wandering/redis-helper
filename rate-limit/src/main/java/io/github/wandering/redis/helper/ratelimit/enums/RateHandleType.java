@@ -1,4 +1,4 @@
-package io.github.redis.helper.ratelimit.enums;
+package io.github.wandering.redis.helper.ratelimit.enums;
 
 /**
  * @author yangyongping

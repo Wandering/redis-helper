@@ -1,8 +1,8 @@
-package io.github.redis.helper.ratelimit;
+package io.github.wandering.redis.helper.ratelimit;
 
-import io.github.redis.helper.ratelimit.handle.RedissonRateLimiter;
-import io.github.redis.helper.ratelimit.handle.IRateLimiter;
-import io.github.redis.helper.ratelimit.handle.RateLimiterConfig;
+import io.github.wandering.redis.helper.ratelimit.handle.RedissonRateLimiter;
+import io.github.wandering.redis.helper.ratelimit.handle.IRateLimiter;
+import io.github.wandering.redis.helper.ratelimit.handle.RateLimiterConfig;
 import org.redisson.api.RedissonClient;
 
 /**

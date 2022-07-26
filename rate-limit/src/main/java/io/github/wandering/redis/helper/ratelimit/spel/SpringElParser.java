@@ -1,4 +1,4 @@
-package io.github.redis.helper.ratelimit.spel;
+package io.github.wandering.redis.helper.ratelimit.spel;
 
 import org.springframework.expression.EvaluationContext;
 import org.springframework.expression.ExpressionParser;

@@ -1,8 +1,8 @@
-package io.github.redis.helper.ratelimit.annotation;
+package io.github.wandering.redis.helper.ratelimit.annotation;
 
-import io.github.redis.helper.ratelimit.enums.RateType;
-import io.github.redis.helper.ratelimit.handle.DefaultRateLimiterHandler;
-import io.github.redis.helper.ratelimit.handle.IRateLimiterHandler;
+import io.github.wandering.redis.helper.ratelimit.enums.RateType;
+import io.github.wandering.redis.helper.ratelimit.handle.DefaultRateLimiterHandler;
+import io.github.wandering.redis.helper.ratelimit.handle.IRateLimiterHandler;
 import org.springframework.core.annotation.AliasFor;
 
 import java.lang.annotation.Documented;

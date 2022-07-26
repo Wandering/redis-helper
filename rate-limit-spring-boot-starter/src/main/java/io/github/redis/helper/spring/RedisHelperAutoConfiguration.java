@@ -1,9 +1,9 @@
 package io.github.redis.helper.spring;
 
-import io.github.redis.helper.ratelimit.RateLimiterService;
+import io.github.wandering.redis.helper.ratelimit.RateLimiterService;
 import lombok.extern.slf4j.Slf4j;
-import io.github.redis.helper.ratelimit.handle.RateLimiterConfig;
-import io.github.redis.helper.ratelimit.handle.RateLimiterExecutor;
+import io.github.wandering.redis.helper.ratelimit.handle.RateLimiterConfig;
+import io.github.wandering.redis.helper.ratelimit.handle.RateLimiterExecutor;
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;

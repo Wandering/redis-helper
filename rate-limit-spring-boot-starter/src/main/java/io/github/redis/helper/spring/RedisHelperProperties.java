@@ -1,6 +1,6 @@
 package io.github.redis.helper.spring;
 
-import io.github.redis.helper.ratelimit.enums.RateType;
+import io.github.wandering.redis.helper.ratelimit.enums.RateType;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

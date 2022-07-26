@@ -1,6 +1,6 @@
-package io.github.redis.helper.ratelimit.handle;
+package io.github.wandering.redis.helper.ratelimit.handle;
 
-import io.github.redis.helper.ratelimit.exception.RateLimiterException;
+import io.github.wandering.redis.helper.ratelimit.exception.RateLimiterException;
 
 /**
  * @author yangyongping

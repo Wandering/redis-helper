@@ -1,4 +1,4 @@
-package io.github.redis.helper.ratelimit.annotation;
+package io.github.wandering.redis.helper.ratelimit.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -6,7 +6,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import io.github.redis.helper.ratelimit.enums.RateType;
+import io.github.wandering.redis.helper.ratelimit.enums.RateType;
 
 /**
  * @author yangyongping
@@ -15,7 +15,7 @@ import io.github.redis.helper.ratelimit.enums.RateType;
 @Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@RateLimiter(rateType = RateType.OVERALL)
-public @interface GlobalRateLimiter {
+@RateLimiter(rateType = RateType.PER_CLIENT)
+public @interface AppRateLimiter {
 
 }

@@ -1,6 +1,6 @@
-package io.github.redis.helper.ratelimit.handle;
+package io.github.wandering.redis.helper.ratelimit.handle;
 
-import io.github.redis.helper.ratelimit.enums.RateType;
+import io.github.wandering.redis.helper.ratelimit.enums.RateType;
 import lombok.EqualsAndHashCode;
 
 import java.util.concurrent.TimeUnit;

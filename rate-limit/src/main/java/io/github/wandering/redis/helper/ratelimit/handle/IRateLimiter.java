@@ -1,4 +1,4 @@
-package io.github.redis.helper.ratelimit.handle;
+package io.github.wandering.redis.helper.ratelimit.handle;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package io.github.redis.helper.ratelimit.exception;
+package io.github.wandering.redis.helper.ratelimit.exception;
 
 /**
  * @author yangyongping
