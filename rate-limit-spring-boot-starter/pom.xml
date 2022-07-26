@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>redis-helper</artifactId>
-        <groupId>com.yyp.redis.helper</groupId>
+        <groupId>io.github.redis.helper</groupId>
         <version>1.0.1-RELEASE</version>
         <relativePath/>
     </parent>
@@ -40,7 +40,7 @@
         <dependency>
             <artifactId>rate-limit</artifactId>
             <version>${redis-helper.version}</version>
-            <groupId>com.yyp.redis.helper</groupId>
+            <groupId>io.github.redis.helper</groupId>
         </dependency>
     </dependencies>
 

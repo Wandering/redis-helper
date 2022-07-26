@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>redis-helper</artifactId>
-        <groupId>com.yyp.redis.helper</groupId>
+        <groupId>io.github.redis.helper</groupId>
         <version>1.0.1-RELEASE</version>
         <relativePath/>
     </parent>
@@ -34,7 +34,7 @@
 
         <dependency>
             <artifactId>rate-limit-spring-boot-starter</artifactId>
-            <groupId>com.yyp.redis.helper</groupId>
+            <groupId>io.github.redis.helper</groupId>
             <version>1.0.1-RELEASE</version>
         </dependency>
         <dependency>

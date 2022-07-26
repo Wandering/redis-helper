@@ -1,0 +1,21 @@
+package io.github.redis.helper.ratelimit.annotation;
+
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+import io.github.redis.helper.ratelimit.enums.RateType;
+
+/**
+ * @author yangyongping
+ * @date 2022-06-13 11:07 上午
+ */
+@Target({ElementType.METHOD,ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@RateLimiter(rateType = RateType.PER_CLIENT)
+public @interface AppRateLimiter {
+
+}
