@@ -11,7 +11,7 @@
     <groupId>io.github.redis.helper</groupId>
     <artifactId>redis-helper</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.1-RELEASE</version>
+    <version>1.0.0-RELEASE</version>
     <name>redis-helper</name>
     <description>redis helper project</description>
 
@@ -45,15 +45,13 @@
     </dependencies>
 
     <distributionManagement>
-<!--        <snapshotRepository>-->
-<!--            <id>nexus</id>-->
-<!--            <name>nexus snapshot</name>-->
-<!--            <url>http://nexus.coolcollege.cn/repository/maven-snapshots/</url>-->
-<!--        </snapshotRepository>-->
-<!--        <repository>-->
-<!--            <id>nexus</id>-->
-<!--            <name>nexus release</name>-->
-<!--            <url>http://nexus.coolcollege.cn/repository/maven-releases/</url>-->
-<!--        </repository>-->
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
 </project>

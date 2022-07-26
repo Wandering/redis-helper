@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.github.redis.helper</groupId>
         <artifactId>redis-helper</artifactId>
-        <version>1.0.1-RELEASE</version>
+        <version>1.0.0-RELEASE</version>
     </parent>
     <artifactId>rate-limit</artifactId>
     <description>rate limit</description>
@@ -18,12 +18,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
             <version>${redisson.version}</version>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

@@ -3,8 +3,8 @@
 ```xml
 <dependency>
     <artifactId>rate-limit-spring-boot-starter</artifactId>
-    <groupId>net.coolcollege.redishelper</groupId>
-    <version>1.0.1-RELEASE</version>
+    <groupId>io.github.redis.helper</groupId>
+    <version>1.0.0-RELEASE</version>
 </dependency>
 ```
 ## 在springboot配置中新增配置
