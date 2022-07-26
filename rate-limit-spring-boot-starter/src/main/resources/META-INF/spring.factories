@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=net.coolcollege.redishelper.spring.RedisHelperAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.yyp.redis.helper.spring.RedisHelperAutoConfiguration
