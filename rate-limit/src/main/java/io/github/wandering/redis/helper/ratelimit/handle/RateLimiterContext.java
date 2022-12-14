@@ -8,11 +8,11 @@ import java.lang.reflect.Method;
  */
 
 public class RateLimiterContext {
-    private String limitKey;
-    private Method method;
-    private Object[] args;
-    private IRateLimiter rateLimiter;
-    private RateLimiterConfig rateLimiterConfig;
+    private final String limitKey;
+    private final Method method;
+    private final Object[] args;
+    private final IRateLimiter rateLimiter;
+    private final RateLimiterConfig rateLimiterConfig;
 
     public RateLimiterContext(String limitKey, Method method, Object[] args, IRateLimiter rateLimiter,
         RateLimiterConfig rateLimiterConfig) {
